@@ -6,22 +6,21 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body{
+ body{
     height: 100vh;
     width: 100vw;
     background-color: black;
-}
-
-body{
     background-image: url('../imagens/fundo-madeira.jpg');
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
 
 main{
     position: relative;
     height: 100vh;
+    margin: auto;
 
 }
 
@@ -35,6 +34,7 @@ section.tell{
     width: 311px;
     background-image: url("../imagens/frame-iphone.png");
     background-repeat:no-repeat;
+    background-size: cover;
 }
 
 iframe.tela{
@@ -43,4 +43,25 @@ iframe.tela{
     left: 22px;
     width: 270px;
     height: 470px;
+}
+
+
+section.redes-sociais{
+    text-align: right;
+}
+
+section.redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.712);
+    box-sizing: border-box;
+    
+}
+
+section.redes-sociais img:hover{
+    border: 2px solid white;
+    transform: translate(-3px, -3px);
+    transition: transform 1ms, border 1ms;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
 }
